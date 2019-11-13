@@ -2,4 +2,53 @@ html, body{
     margin: 0;
     padding: 0;
     background-color: rgb(193, 238, 240);
+    text-align: left;
+}
+.navigator{
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.introduce{
+    margin: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    color: rgb(60, 60, 60);
+    letter-spacing: 0.5px;
+    font-style: oblique;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+#leftside{
+    width: 25%;
+    height: 1000px;
+    display: block;
+    float: left;
+}
+#rightside{
+    width: 25%;
+    height: 1000px;
+    float: left;
+}
+#content{
+    width: 50%;
+    height: min-content;
+    float: left;
+    
+}
+footer{
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+}
+.formation{
+    border: 1px solid black;
+    border-collapse: collapse;
+    display: table;
+    justify-content: space-around;
+    align-content: space-around;
+    text-align: left;
+    text-transform: uppercase;
 }
