@@ -1,7 +1,7 @@
 html, body{
     margin: 0;
     padding: 0;
-    background-color: rgb(193, 238, 240);
+    background-color: rgb(220, 253, 251);
     text-align: left;
 }
 .navigator{
@@ -9,6 +9,11 @@ html, body{
     height: 20px;
     text-align: center;
     text-transform: uppercase;
+    text-decoration: none;
+}
+a:link{
+    text-decoration: none;
+    color: rgb(60, 60, 60);
 }
 .introduce{
     margin: 20px;
@@ -23,18 +28,17 @@ html, body{
 
 #leftside{
     width: 25%;
-    height: 1000px;
+    height: 500px;
     display: block;
     float: left;
 }
 #rightside{
     width: 25%;
-    height: 1000px;
+    height: 500px;
     float: left;
 }
 #content{
     width: 50%;
-    height: min-content;
     float: left;
     
 }
@@ -42,8 +46,12 @@ footer{
     width: 100%;
     text-align: center;
     text-transform: capitalize;
+    margin-top: 65px;
+    margin-bottom: 30px;
+    color: rgb(255, 5, 5);
+    font-size: large ;
 }
-.formation{
+#tablo1{
     border: 1px solid black;
     border-collapse: collapse;
     display: table;
@@ -51,4 +59,64 @@ footer{
     align-content: space-around;
     text-align: left;
     text-transform: uppercase;
+    width: 100%;
+    margin-top: 7%;
 }
+#tablo2{
+    border: 1px solid black;
+    border-collapse: collapse;
+    display: table;
+    justify-content: space-around;
+    align-content: space-around;
+    text-align: left;
+    text-transform: uppercase;
+    width: 100%;
+    margin-top: 7%;
+}
+#tablo3{
+    border: 1px solid black;
+    border-collapse: collapse;
+    display: table;
+    justify-content: space-around;
+    align-content: space-around;
+    text-align: left;
+    text-transform: uppercase;
+    width: 100%;
+    margin-top: 7%;
+}
+#tablo4{
+    border: 1px solid black;
+    border-collapse: collapse;
+    display: table;
+    justify-content: space-around;
+    align-content: space-around;
+    text-align: left;
+    text-transform: uppercase;
+    width: 100%;
+    margin-top: 7%;
+}
+tr, th,td{
+    border: 1px solid;
+    padding: 5px;
+    margin: 0px;
+}
+tr:nth-child(even){
+    background-color: rgb(133, 196, 201);
+}
+.tablohead{
+    background-color: rgb(107, 221, 145);
+}
+.tablobody{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 13px;
+    color: rgb(54, 48, 48);
+}
+table caption{
+    font-size: 16px;
+
+}
+div hr{
+    margin-top: 15px;
+    width: ;
+}
+
