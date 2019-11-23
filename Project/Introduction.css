@@ -8,7 +8,6 @@ body{
     background-color: rgba(0, 0, 0, 0.534);
     border: 1px solid black;
     text-transform: uppercase;
-    padding-top: 10px;
     color: rgba(0, 0, 0, 0.877);
     position: fixed;
     top: 0px;
@@ -21,6 +20,11 @@ body{
     margin: 0px;
     padding: 0px;
     padding-left: 5px;
+    padding-top: 0px;
+}
+img{
+    width: 100px;
+    height: 30px;
 }
 #slogan{
     padding: 10px;
