@@ -4,14 +4,14 @@ body{
     background-color: rgba(0, 0, 0, 0.534);
 }
 #navigator{
-    width: 100%;
+    width: 100vw;
     height: 50px;
     background-color: rgba(0, 0, 0, 0.534);
     border: 1px solid black;
     text-transform: uppercase;
-    /*position: fixed;*/
+    position: fixed;
     top: 0px;
-    display: block;
+    display: inline-block;
     text-align: center;
 }
 /*#logo{
@@ -67,4 +67,29 @@ a:active{
 }
 a:visited{
     color: rgba(175, 34, 34, 0.185);
+}
+.div1{
+    height: 1000px;
+    width: 15vw;
+    background-color: rgba(103, 100, 78, 0.534);
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+}
+.div2{
+    height: 1000px;
+    width: 60vw;
+    background-color: rgba(103, 70, 78, 0.534);
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+}
+.div3{
+    height: 1000px;
+    width: 20vw;
+    background-color: rgba(103, 130, 90, 0.534);
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    float: right;
 }
