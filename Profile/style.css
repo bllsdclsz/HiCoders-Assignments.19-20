@@ -121,9 +121,10 @@ div hr{
 .button{
     background-color: initial;
     border: none;
-    display: inline-block;
+    display: flex;
     margin-top: 10px;
     margin-left: 10px;
+    align-self: flex-start;
 }
 img{
     width: 20px;
@@ -132,10 +133,10 @@ img{
 .menu{
     background-color: initial;
     border: none;
-    display: inline-block;
+    display: flex;
+    justify-content: flex-end;
     margin-top: 10px;
     margin-left: 10px;
     color: rgb(189, 57, 57);
-    float: right;
     font-size: 24px;
 }
