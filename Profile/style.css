@@ -117,7 +117,6 @@ table caption{
 }
 div hr{
     margin-top: 15px;
-    width: ;
 }
 .button{
     background-color: initial;
@@ -139,7 +138,4 @@ img{
     color: rgb(189, 57, 57);
     float: right;
     font-size: 24px;
-}
-details{}
-    
 }
