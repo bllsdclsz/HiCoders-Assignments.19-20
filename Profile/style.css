@@ -119,4 +119,27 @@ div hr{
     margin-top: 15px;
     width: ;
 }
-
+.button{
+    background-color: initial;
+    border: none;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+img{
+    width: 20px;
+    height: 20px;
+}
+.menu{
+    background-color: initial;
+    border: none;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: rgb(189, 57, 57);
+    float: right;
+    font-size: 24px;
+}
+details{}
+    
+}
