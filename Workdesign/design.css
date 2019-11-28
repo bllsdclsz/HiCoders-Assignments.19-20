@@ -29,6 +29,7 @@ html, body{
     align-items: center;
     flex-flow: nowrap;
     flex-direction: column;
+    line-height: 0;
 }
 #bgimg{
     display: flex;
@@ -37,37 +38,173 @@ html, body{
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 24vh;
+    height: 30vh;
     
 }
 #profil-section{
     display: flex;
     position: relative;
-    top: -80px;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    top: -60px;
     width: 25vw;
-    height: 20vh;
+    height: 24vh;
     box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.25);
     background-color: rgb(255, 255, 255);
+    z-index: 1;
+    line-height: 0;
+}
+#marks{
+    word-spacing: 5px;
+}
+#marks img{
+    height: 18px;
+    width: 18px;
+    position: relative;
+    top: -60px;
+}
+#profil-foto img{
+    position: relative;
+    left: 25px;
+    top: -40px;
+    height: 120px;
+    width: 120px;
+}
+input{
+    position: relative;
+    top: -60px;
+    left: -20px;
+    height: 40px;
+    width: 40px;
+}
+.name{
+    position: relative;
+    top: -65px;
+}
+.name p:first-child{
+    font-weight: bold;
+    font-size: 14px;
+}
+.name p:last-child{
+    font-size: 10px;
+}
+.comment{
+    display: flex;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    position: relative;
+    top: -60px;
+    font-size: 12px;
+
 }
 #settings-section{
     display: flex;
     position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    line-height: 0;
     top: -30px;
     width: 25vw;
-    height: 20vh;
+    height: 35vh;
     box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.25);
     background-color: rgb(255, 255, 255);
+    z-index: 1;
+    font-size: 14px;
+    color: black;
+}
+.entity1{
+    position: relative;
+    top: -15px;
+    right: -130px;
+}
+.entity2{
+    position: relative;
+    top: -15px;
+    right: -164px;
+}
+.entity3{
+    position: relative;
+    top: -15px;
+    right: -149px;
+}
+.entity4{
+    position: relative;
+    top: -15px;
+    right: -205px;
+}
+.middle{
+    display: flex;
+    justify-content: space-between;
+}
+.text{
+    position: relative;
+    top: -15px;
 }
 #menu{
     display: flex;
-    position: relative;
+    justify-content: space-around;
     box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.25);
     background-color: rgb(255, 255, 255);
     height: 7vh;
     width: 33vw;
+    z-index: 1;
+}
+#menu img{
+    width: 40px;
+    height: 40px;
 }
 #upbar{
     display: flex;
     justify-content: space-between;
-    color: rgb(255,255,255);
+}
+#upbar-img1{
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+#upbar-img2{
+    position: relative;
+    top: 5px;
+    left: 370px;
+}
+#upbar img{
+    width: 16px;
+    height: 16px;
+}
+#settings-section img{
+    width: 40px;
+    height: 40px;
+}
+#section-header1{
+    position: relative;
+    left: -90px;
+    bottom: 44px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+#section-header2{
+    position: relative;
+    left: -90px;
+    bottom: 8px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+a:link{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: black;
+}
+a:active{
+    color: black;
+}
+a:visited{
+    color: black;
 }
