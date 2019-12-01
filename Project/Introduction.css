@@ -13,24 +13,64 @@ body{
     text-transform: uppercase;
     text-decoration: none;
     flex-flow: nowrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    font-size: 24px;
+    
 }
 #navigator span{
     display: flex;
-    padding: 10px;
-    margin: 10px;
+    margin: 0;
+    padding: 0;
+}
+#navigator img{
+    width: 60px;
+    height: 60px;
+    text-decoration: none;
+}
+.navtext{
+    position: relative;
+    top: -50px;
+    left: 50px;
 }
 #logobar{
-    width: initial;
+    width: 100vw;
     height: 40vh;
     background-color: rgb(8, 132, 141);
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-flow: nowrap;
     text-decoration: none;
     text-transform: uppercase;
     margin: 0;
     list-style: none;
-    
+}
+#logobar div{ 
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+#arrow{
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+#arrow img{
+    width: 60px;
+    height: 60px;
+}
+#arrow a:link{
+    background-color: rgba(245, 243, 243, 0.829);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+}
+details{
+    text-decoration: none;
 }
 a:link{
     color: hsla(0,0%,100%,.7);
