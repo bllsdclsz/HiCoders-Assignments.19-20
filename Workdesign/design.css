@@ -99,6 +99,7 @@ input{
     position: relative;
     top: -60px;
     font-size: 12px;
+    line-height: 10px;
 
 }
 #settings-section{

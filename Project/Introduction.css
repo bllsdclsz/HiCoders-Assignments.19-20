@@ -32,24 +32,6 @@ body{
     top: -50px;
     left: 50px;
 }
-#logobar{
-    width: 100vw;
-    height: 40vh;
-    background-color: rgb(8, 132, 141);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: nowrap;
-    text-decoration: none;
-    text-transform: uppercase;
-    margin: 0;
-    list-style: none;
-}
-#logobar div{ 
-    display: flex;
-    flex-grow: 1;
-    justify-content: center;
-}
 #arrow{
     margin: 0;
     padding: 0;
@@ -58,11 +40,15 @@ body{
     bottom: 10px;
 }
 #arrow img{
+    margin: 0;
+    padding: 0;
     width: 60px;
     height: 60px;
 }
 #arrow a:link{
-    background-color: rgba(245, 243, 243, 0.829);
+    background-color: initial;
+    margin: 0;
+    padding: 0;
 }
 form{
     display: flex;
@@ -93,4 +79,73 @@ a:visited{
 img:hover{
     width: 50px;
     height: 50px;
+}
+#logobar{
+    width: 100vw;
+    height: 40vh;
+    background-color: rgb(8, 132, 141);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: nowrap;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#logobar div{ 
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+#login{
+    width: 26vw;
+    font-size: 20px;
+}
+#slogan{
+    color: #fcf5b0;
+    width: 48vw;
+    font-size: 70px;
+    font-variant: small-caps;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 0px 0px 20px black;
+    line-height: 55px;
+}
+#search{
+    width: 26vw;
+    font-size: 20px;
+    font-variant: small-caps;
+}
+main{
+
+}
+#article{
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    justify-self: center;
+    align-content: center;
+    align-items: stretch;
+    align-self: center;
+    width: 100vw;
+    height: 50vh;
+    background-color: rgb(235, 242, 243);
+}
+#first-article{
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;
+    background-color: rgb(97, 240, 78);
+}
+#second-article{
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;
+    background-color: rgb(233, 230, 66);
+}
+#third-article{
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;
+    background-color: rgb(107, 202, 247);
 }
