@@ -63,6 +63,10 @@ a:link{
     text-decoration: none;
     background-color: rgba(4, 191, 253, 0.555);
 }
+a:visited{
+    color: rgba(175, 34, 34, 0.185);
+    text-decoration: none;
+}
 a:hover{
     color:rgb(0, 0, 0) ;
     text-decoration: none;
@@ -71,10 +75,6 @@ a:active{
     color:rgb(0, 0, 0) ;
     text-decoration: none;
     
-}
-a:visited{
-    color: rgba(175, 34, 34, 0.185);
-    text-decoration: none;
 }
 img:hover{
     width: 50px;
