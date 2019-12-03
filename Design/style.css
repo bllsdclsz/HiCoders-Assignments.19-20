@@ -5,13 +5,14 @@ html, body{
 }
 nav{
     display: flex;
-    justify-content: space-evenly;
-    background-color: rgba(5, 12, 112, 0.719);
+    justify-content: space-around;
+    background-color: rgba(45, 52, 158, 0.836);
     color: white;
 }
 #facelogo{
     font-size: 50px;
     margin-top: 10px;
+    font-weight: bold;
 }
 #login{
     display: flex;
@@ -20,6 +21,9 @@ nav{
     font-size: 14px;
     line-height: 20px;
     margin-top: 10px;
+}
+#email{
+    margin-right: 5px;
 }
 #password{
     display: flex;
@@ -60,6 +64,12 @@ nav{
     width: 30vw;
     height: 100%;
     margin-right: 50px;
+    font-weight: bold;
+    color: rgb(6, 6, 156);
+}
+#main1 img{
+    width: 30vw;
+    height: 20vh;
 }
 #main2{
     width: 30vw;
