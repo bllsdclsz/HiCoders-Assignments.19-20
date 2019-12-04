@@ -1,13 +1,14 @@
-html, body{
+*{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;  
 }
 nav{
     display: flex;
     justify-content: space-around;
     background-color: rgba(45, 52, 158, 0.836);
     color: white;
+    width: 100vw;
 }
 #facelogo{
     font-size: 50px;
@@ -55,15 +56,14 @@ nav{
 }
 #main{
     display: flex;
-    justify-content: center;
-    width: 100%;
+    justify-content: space-around;
+    width: 100vw;
     height: 100vh;
     background-image: linear-gradient(white, rgb(191, 191, 250));
 }
 #main1{
     width: 30vw;
-    height: 100%;
-    margin-right: 50px;
+    height: 100vh;
     font-weight: bold;
     color: rgb(6, 6, 156);
 }
@@ -73,38 +73,66 @@ nav{
 }
 #main2{
     width: 30vw;
-    height: 100%;
+    height: 100vh;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #footer{
-    width: 100%;
-    height: 35vh;
+    display: block;
+    position: relative;
+    left: 10vw;
+    top: 1vh;
+    width: 80vw;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 4vh;
+    letter-spacing: 0.5px;
 }
+.footer-sections{
+    display: block;
+    width: 80vw;
+}
+ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+
+}
+ul li{
+    margin-right: 15px;
+}
+li img{
+    width: 3vw;
+    height: 3vh;
+}
+a:link, a:visited{
+    text-decoration: none;
+    cursor: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
