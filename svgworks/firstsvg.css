@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.svg{
+    background-color: rgba(0, 0, 0, 0.863);
+    margin-bottom: 1vh;
+    width: 100vw;
+    height: 50vh;
+}
+svg{
+    position: relative;
+    left: 30vw;
+    top:10vh;
+    width: 50vw;
+    height: 30vh;
+}
+.big-circle{
+    display: block;
+    position: relative;
+    margin-left: 20vw; 
+    margin-top: 15vh; 
+    r: 30;
+    fill:none; 
+    stroke:yellow; 
+    stroke-width:3;
+}
+.small-circle{
+    cx="100" 
+    cy="85" 
+    r="4"  
+    fill="none" 
+    stroke="yellow" 
+    stroke-width="2"
+}
+.long-rect{
+
+}
+.i-class{
+    width: 50px;
+    height: 50px;
+    fill: red;
+    stroke: green;
+    opacity: 0.3;
+
+}
