@@ -5,7 +5,7 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-color: rgba(245, 243, 243, 0.829);
+    background-color: rgba(245, 243, 243, 0.726);
 }
 #navigator{
     width: 100%;
@@ -13,7 +13,7 @@ body{
     display: flex;
     list-style: none;
     margin: 0;
-    background-color: deepskyblue;
+    background-color: rgba(0, 0, 0, 0.884);
     text-transform: capitalize;
     text-decoration: none;
     flex-flow: nowrap;
@@ -21,10 +21,21 @@ body{
     font-size: 24px;
     
 }
-#navigator span{
+#navigator span, #navigator div{
     display: flex;
     margin: 0;
     padding: 0;
+    text-decoration: none;
+}
+#navigator>div>ul{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap row;
+    list-style-type: none;
+}
+#navigator>div>ul:first-child>li{
+    display: flex;
+    justify-content: space-around;
 }
 #navigator img{
     width: 60px;
@@ -62,20 +73,20 @@ details{
     text-decoration: none;
 }
 a:link{
-    color: hsla(0,0%,100%,.7);
+    color: rgb(249, 253, 5);
     text-decoration: none;
-    background-color: rgba(4, 191, 253, 0.555);
+    background-color: initial;
 }
 a:visited{
     color: rgba(175, 34, 34, 0.185);
     text-decoration: none;
 }
 a:hover{
-    color:rgb(0, 0, 0) ;
+    color:rgba(255, 255, 255, 0.842) ;
     text-decoration: none;
 }
 a:active{
-    color:rgb(0, 0, 0) ;
+    color:rgba(255, 255, 255, 0.808) ;
     text-decoration: none;
     
 }
@@ -86,7 +97,7 @@ img:hover{
 #logobar{
     width: 100%;
     height: 40vh;
-    background-color: rgb(8, 132, 141);
+    background-color: rgba(0, 0, 0, 0.808);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,18 +113,26 @@ img:hover{
     justify-content: center;
 }
 #login{
+    color: #fde400;
     width: 26vw;
     font-size: 20px;
     list-style: none;
 }
 #slogan{
-    color: #fcf5b0;
+    color: #fde400;
     width: 48vw;
     font-size: 70px;
     font-variant: small-caps;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-shadow: 0px 0px 20px black;
     line-height: 55px;
+}
+input::placeholder{
+    color: #fde400;
+}
+input{
+    background-color: rgba(0, 0, 0, 0.233);
+    border: none;
 }
 #search{
     width: 26vw;
@@ -169,23 +188,13 @@ main{
     font-weight: normal;
     font-size: 1rem;
 }
+
 li{
     text-align: left;
     padding: 2px;
-    
 }
 li:last-child li:hover{
     background-color: rgba(0, 0, 0, 0.233);
-}
-div>ul>li:first-child::before{
-    content: url("icons/iconhome.svg");
-}
-
-.navtext:hover ul{
-    /*
-    visibility: visible;
-    */
-    display: block;
 }
 .width-height{
     width: 80vw;
@@ -221,4 +230,10 @@ main>div>div{
 }
 main>div:first-child>div{
     margin-top: 0;
+}
+footer{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.884);
+    width: 100%;
+    height: 50vh;
 }

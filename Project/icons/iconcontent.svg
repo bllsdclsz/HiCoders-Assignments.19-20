@@ -1,5 +1,5 @@
 <svg width="2500" height="1400" viewBox="0 0 2500 1400" fill="none" xmlns="http://www.w3.org/2000/svg">
-<line x1="650" y1="430" x2="1850" y2="430" stroke="black" stroke-width="40"/>
-<line x1="650" y1="680" x2="1850" y2="680" stroke="black" stroke-width="40"/>
-<line x1="650" y1="930" x2="1850" y2="930" stroke="black" stroke-width="40"/>
+<path d="M650 430H1850" stroke="#FAFF00" stroke-width="50"/>
+<path d="M650 680H1850" stroke="#FAFF00" stroke-width="50"/>
+<path d="M650 930H1850" stroke="#FAFF00" stroke-width="50"/>
 </svg>

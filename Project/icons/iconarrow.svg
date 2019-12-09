@@ -1,4 +1,20 @@
 <svg width="2500" height="1400" viewBox="0 0 2500 1400" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="1250" cy="700" r="600" fill="black"/>
-<path d="M1267.68 321.322C1257.91 311.559 1242.09 311.559 1232.32 321.322L1073.22 480.421C1063.46 490.184 1063.46 506.014 1073.22 515.777C1082.99 525.54 1098.82 525.54 1108.58 515.777L1250 374.355L1391.42 515.777C1401.18 525.54 1417.01 525.54 1426.78 515.777C1436.54 506.014 1436.54 490.184 1426.78 480.421L1267.68 321.322ZM1275 1062L1275 339H1225L1225 1062H1275Z" fill="white"/>
+<path d="M1250 1300C1581.37 1300 1850 1031.37 1850 700C1850 368.629 1581.37 100 1250 100C918.629 100 650 368.629 650 700C650 1031.37 918.629 1300 1250 1300Z" fill="black" fill-opacity="0.85"/>
+<path d="M1267.68 321.322C1257.91 311.559 1242.09 311.559 1232.32 321.322L1073.22 480.421C1063.46 490.184 1063.46 506.014 1073.22 515.777C1082.99 525.54 1098.82 525.54 1108.58 515.777L1250 374.355L1391.42 515.777C1401.18 525.54 1417.01 525.54 1426.78 515.777C1436.54 506.014 1436.54 490.184 1426.78 480.421L1267.68 321.322ZM1275 1062V339H1225V1062H1275Z" fill="url(#paint0_diamond)"/>
+<defs>
+<radialGradient id="paint0_diamond" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1250 314) rotate(90) scale(748 368.2)">
+<stop stop-color="#FAFF00"/>
+<stop offset="0.130208" stop-color="#FEF601" stop-opacity="0.196875"/>
+<stop offset="0.21875" stop-color="#FAFE00" stop-opacity="0.903625"/>
+<stop offset="0.333333" stop-color="#FEF601" stop-opacity="0.147656"/>
+<stop offset="0.463542" stop-color="#FAFF00" stop-opacity="0.999958"/>
+<stop offset="0.572917" stop-color="#FFF501" stop-opacity="0.01"/>
+<stop offset="0.671875" stop-color="#FAFF00" stop-opacity="0.998935"/>
+<stop offset="0.796875" stop-color="#FFF501" stop-opacity="0.0175251"/>
+<stop offset="0.885417" stop-color="#F8FD00" stop-opacity="0.984375"/>
+<stop offset="0.989583" stop-color="#FFF501" stop-opacity="0"/>
+<stop offset="0.989583" stop-color="#FFF501" stop-opacity="0"/>
+<stop offset="0.989683" stop-color="#FFF501" stop-opacity="0"/>
+</radialGradient>
+</defs>
 </svg>
