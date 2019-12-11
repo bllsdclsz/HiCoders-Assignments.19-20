@@ -21,6 +21,16 @@ body{
     font-size: 24px;
     
 }
+#mark, #mark a{
+    margin: 0;
+    padding: 0;
+}
+#mark img{
+    margin: 0;
+    padding: 0;
+    width: 50px!important;
+    height: 50px!important;
+}
 #navigator span, #navigator div{
     display: flex;
     margin: 0;
@@ -233,7 +243,22 @@ main>div:first-child>div{
 }
 footer{
     display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     background-color: rgba(0, 0, 0, 0.884);
     width: 100%;
     height: 50vh;
+}
+.footer-layout{
+    margin: 0;
+    padding: 0;
+    margin-left: 10vw;
+    width: 80%;
+    height: 16vh;
+    border-bottom: 1px solid rgba(249, 253, 5, 0.075);
+}
+footer div:last-child{
+    border-bottom: none;
 }
