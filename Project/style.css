@@ -28,8 +28,11 @@ body{
 #mark img{
     margin: 0;
     padding: 0;
-    width: 50px!important;
-    height: 50px!important;
+    width: 100px!important;
+    height: 100px!important;
+    position: relative;
+    top: -20px;
+    left: -20px;
 }
 #navigator span, #navigator div{
     display: flex;
