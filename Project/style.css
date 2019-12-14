@@ -3,23 +3,22 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     background-color: rgba(245, 243, 243, 0.726);
 }
 #navigator{
     width: 100%;
-    height: 10vh;
+    height: 8vh;
     display: flex;
     list-style: none;
     margin: 0;
     background-color: rgba(0, 0, 0, 0.884);
     text-transform: capitalize;
     text-decoration: none;
-    flex-flow: nowrap;
+    flex-flow: row nowrap;
     justify-content: space-around;
-    font-size: 24px;
-    
+    font-size: 18px;
 }
 #mark, #mark a{
     margin: 0;
@@ -55,10 +54,26 @@ body{
     height: 60px;
     text-decoration: none;
 }
-.navtext{
+.navtext:hover .list{
+    visibility: visible;
+}
+.navtext>ul{
     position: relative;
-    top: -50px;
-    left: 50px;
+    top: 3vh;
+    left: -7vw;  
+}
+.nav-class{ 
+    display: flex;
+    position: relative;
+    left: 5vw;
+    width: 70vw;
+    height: initial;
+    justify-content: space-between;
+}
+.menu{
+    display: flex;
+    width: 40vw;
+    justify-content: space-evenly;
 }
 #arrow{
     margin: 0;
@@ -109,7 +124,7 @@ img:hover{
 }
 #logobar{
     width: 100%;
-    height: 40vh;
+    height: 30vh;
     background-color: rgba(0, 0, 0, 0.808);
     display: flex;
     justify-content: center;
@@ -126,15 +141,35 @@ img:hover{
     justify-content: center;
 }
 #login{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
     color: #fde400;
-    width: 26vw;
-    font-size: 20px;
+    width: 11vw;
+    font-size: 16px;
     list-style: none;
+}
+#login>div{
+    
+    margin-top: 1vh;
+    margin-left: 0;
+}
+.sign{
+    text-transform: capitalize;
+    background-color: #52514f6e;
+    width: 5vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sign:first-child{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.154);
 }
 #slogan{
     color: #fde400;
     width: 48vw;
-    font-size: 70px;
+    font-size: 50px;
     font-variant: small-caps;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-shadow: 0px 0px 20px black;
@@ -146,13 +181,19 @@ input::placeholder{
 input{
     background-color: rgba(0, 0, 0, 0.233);
     border: none;
+    width: 20vw;
+    border-radius: 5px;
+}
+input:active{
+    text-decoration: none;
 }
 #search{
-    width: 26vw;
+    width: 20vw;
     font-size: 20px;
     font-variant: small-caps;
 }
 main{
+    display: block;
 
 }
 /*
@@ -172,9 +213,12 @@ main{
 #first-article{
     display: flex;
     justify-content: center;
+    padding: 2vh 2vw;
     flex-basis: 100%;
-    background-color: rgb(97, 240, 78);
+    background-color: rgb(232, 245, 230);
+    box-shadow: 0 0 0 0.1em rgba(0, 0, 0, 0.154);
 }
+/*
 #second-article{
     display: flex;
     justify-content: center;
@@ -187,13 +231,12 @@ main{
     flex-basis: 100%;
     background-color: rgb(107, 202, 247);
 }
+*/
 .list{
     list-style-type: none;
     background-color: rgba(0, 0, 0, 0.322);
-    display: none;
-    /*
     visibility: hidden;
-    */
+    position: relative;
     text-align: left;
     padding: 0;
     width: auto;
@@ -210,8 +253,8 @@ li:last-child li:hover{
     background-color: rgba(0, 0, 0, 0.233);
 }
 .width-height{
-    width: 80vw;
-    height: 50vh;
+    width: 70vw;
+    height: auto;
 }
 /*
 .display-flex{
@@ -232,11 +275,7 @@ main{
 }
 main>div{
     display: flex;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.144);
     margin: 1vh auto;
-}
-main>div:first-child{
-    margin-top: 0;
 }
 main>div>div{
     margin: 1vh 1vw;
@@ -259,9 +298,25 @@ footer{
     padding: 0;
     margin-left: 10vw;
     width: 80%;
-    height: 16vh;
+    height: 13vh;
     border-bottom: 1px solid rgba(249, 253, 5, 0.075);
+    text-transform: capitalize;
+    color: #fde4006e;
+    vertical-align: baseline;
+}
+.footer-layout>ul{
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: flex-end;
+    justify-self: flex-end;
+    align-content: flex-end;
+    align-items: flex-end;
+    align-self: flex-end;
+    list-style-type: none;
 }
 footer div:last-child{
     border-bottom: none;
+}
+footer>p{
+    text-transform: capitalize;
 }
