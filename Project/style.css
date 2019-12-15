@@ -54,9 +54,11 @@ body{
     height: 60px;
     text-decoration: none;
 }
+/*
 .navtext:hover .list{
     visibility: visible;
 }
+*/
 .navtext>ul{
     position: relative;
     top: 3vh;
@@ -73,7 +75,13 @@ body{
 .menu{
     display: flex;
     width: 40vw;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*bir ara bak*/
+.navtext-hover:hover + .list{
+    display: block;
 }
 #arrow{
     margin: 0;
@@ -235,8 +243,10 @@ main{
 .list{
     list-style-type: none;
     background-color: rgba(0, 0, 0, 0.322);
-    visibility: hidden;
+    
     position: relative;
+    left: -8vw;
+    top: 12vh;
     text-align: left;
     padding: 0;
     width: auto;
