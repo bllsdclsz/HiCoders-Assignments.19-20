@@ -132,8 +132,11 @@ img:hover{
 }
 #logobar{
     width: 100%;
-    height: 30vh;
-    background-color: rgba(0, 0, 0, 0.808);
+    height: 40vh;
+    background-image: url("icons/iconbgimg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -218,13 +221,13 @@ main{
     background-color: rgb(235, 242, 243);
 }
 */
-#first-article{
+.first-article{
     display: flex;
     justify-content: center;
     padding: 2vh 2vw;
     flex-basis: 100%;
-    background-color: rgb(232, 245, 230);
-    box-shadow: 0 0 0 0.1em rgba(0, 0, 0, 0.154);
+    margin-left: 0;
+    margin-right: 0;
 }
 /*
 #second-article{
@@ -262,9 +265,11 @@ li{
 li:last-child li:hover{
     background-color: rgba(0, 0, 0, 0.233);
 }
-.width-height{
+.main-layout{
     width: 70vw;
     height: auto;
+    background-color: rgb(232, 245, 230);
+    box-shadow: 0 0 0 0.1em rgba(0, 0, 0, 0.154);
 }
 /*
 .display-flex{
