@@ -9,7 +9,7 @@ body{
 }
 #navigator{
     width: 100%;
-    height: 8vh;
+    height: 10vh;
     display: flex;
     list-style: none;
     margin: 0;
@@ -18,12 +18,20 @@ body{
     text-decoration: none;
     flex-flow: row nowrap;
     justify-content: space-around;
+    align-items: baseline;
     font-size: 18px;
 }
 #mark, #mark a{
     margin: 0;
     padding: 0;
 }
+#mark h1{
+    margin: 0 0;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    font-size: 1.75em;
+}
+/*
 #mark img{
     margin: 0;
     padding: 0;
@@ -33,6 +41,7 @@ body{
     top: -20px;
     left: -20px;
 }
+*/
 #navigator span, #navigator div{
     display: flex;
     margin: 0;
@@ -66,8 +75,6 @@ body{
 }
 .nav-class{ 
     display: flex;
-    position: relative;
-    left: 5vw;
     width: 70vw;
     height: initial;
     justify-content: space-between;
@@ -167,15 +174,13 @@ img:hover{
 }
 .sign{
     text-transform: capitalize;
-    background-color: #52514f6e;
+    background-color: #2525248a;
     width: 5vw;
     height: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.sign:first-child{
-    border-bottom: 1px solid rgba(0, 0, 0, 0.154);
+    border-radius: 10%;
 }
 #slogan{
     color: #fde400;
@@ -265,10 +270,10 @@ li:last-child li:hover{
     background-color: rgba(0, 0, 0, 0.233);
 }
 .main-layout{
-    width: 70vw;
+    width: 60vw;
     height: auto;
     background-color: rgb(232, 245, 230);
-    box-shadow: 0 0 0 0.1em rgba(0, 0, 0, 0.154);
+    box-shadow: 0 0 1.2em rgba(0, 0, 0, 0.247);
 }
 /*
 .display-flex{
