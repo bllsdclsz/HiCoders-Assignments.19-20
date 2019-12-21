@@ -272,7 +272,6 @@ li:last-child li:hover{
 .main-layout{
     width: 60vw;
     height: auto;
-    background-color: rgb(232, 245, 230);
     box-shadow: 0 0 1.2em rgba(0, 0, 0, 0.247);
 }
 
@@ -342,25 +341,26 @@ footer>p{
 }
 .left{
     display: flex;
-    width: 30vw;
-    height: 100vh;
-    border-right: 1px solid rgba(0, 0, 0, 0.233);
-}
-.center{
-    display: flex;
-    width: 60vw;
+    width: 24vw;
     height: 100vh;
     
-
 }
+.center{
+    width: 70vw;
+    height: auto;
+    columns: 25vw 2;
+    border-left: 1px solid rgba(0, 0, 0, 0.233);
+    padding: 1vw 1vh;
+}
+
 .about-section{
     display: flex;
-
+    text-align: justify;
 
 }
 .main-layout-about{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 100vw;
     height: auto;
 }
