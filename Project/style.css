@@ -8,7 +8,7 @@ body{
     background-color: rgba(245, 243, 243, 0.726);
 }
 #navigator{
-    width: 100%;
+    width: 100vw;
     height: 10vh;
     display: flex;
     list-style: none;
@@ -18,30 +18,14 @@ body{
     text-decoration: none;
     flex-flow: row nowrap;
     justify-content: space-around;
-    align-items: baseline;
+    align-items: center;
     font-size: 18px;
 }
 #mark, #mark a{
+    display: flex;
     margin: 0;
-    padding: 0;
+    padding: 0;  
 }
-#mark h1{
-    margin: 0 0;
-    text-transform: uppercase;
-    letter-spacing: 1rem;
-    font-size: 1.75em;
-}
-/*
-#mark img{
-    margin: 0;
-    padding: 0;
-    width: 100px!important;
-    height: 100px!important;
-    position: relative;
-    top: -20px;
-    left: -20px;
-}
-*/
 #navigator span, #navigator div{
     display: flex;
     margin: 0;
@@ -59,8 +43,8 @@ body{
     justify-content: space-around;
 }
 #navigator img{
-    width: 60px;
-    height: 60px;
+    width: 2em;
+    height: 2em;
     text-decoration: none;
 }
 /*
@@ -78,12 +62,20 @@ body{
     width: 70vw;
     height: initial;
     justify-content: space-between;
+    margin-top: 1vh;
+}
+#mark img{
+    margin-top: 1vh;
 }
 .menu{
     display: flex;
     width: 40vw;
     justify-content: space-around;
     align-items: center;
+    margin-top: 1vh;
+}
+.menu div{
+    margin-top: 1vh;
 }
 
 /*bir ara bak*/
@@ -138,7 +130,7 @@ img:hover{
     height: 50px;
 }
 #logobar{
-    width: 100%;
+    width: 100vw;
     height: 40vh;
     background-image: url("icons/iconbgimg.svg");
     background-repeat: no-repeat;
@@ -158,18 +150,16 @@ img:hover{
     flex-grow: 1;
     justify-content: center;
 }
-#login{
+.login{
     display: flex;
     justify-content: space-between;
     flex-flow: row nowrap;
     color: #fde400;
-    width: 11vw;
+    width: 7vw;
     font-size: 16px;
     list-style: none;
 }
-#login>div{
-    
-    margin-top: 1vh;
+.login>div{
     margin-left: 0;
 }
 .sign{
@@ -220,7 +210,7 @@ main{
     align-content: center;
     align-items: stretch;
     align-self: center;
-    width: 100%;
+    width: 100vw;
     height: 50vh;
     background-color: rgb(235, 242, 243);
 }
@@ -229,7 +219,7 @@ main{
     display: flex;
     justify-content: center;
     padding: 2vh 2vw;
-    flex-basis: 100%;
+    flex-basis: 100vw;
     margin-left: 0;
     margin-right: 0;
 }
@@ -250,7 +240,6 @@ main{
 .list{
     list-style-type: none;
     background-color: rgba(0, 0, 0, 0.322);
-    
     position: relative;
     left: -8vw;
     top: 12vh;
@@ -261,7 +250,6 @@ main{
     font-weight: normal;
     font-size: 1rem;
 }
-
 li{
     text-align: left;
     padding: 2px;
@@ -309,14 +297,14 @@ footer{
     align-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.884);
-    width: 100%;
+    width: 100vw;
     height: 35vh;
 }
 .footer-layout{
     margin: 0;
     padding: 0;
     margin-left: 10vw;
-    width: 80%;
+    width: 80vw;
     height: 8vh;
     border-bottom: 1px solid rgba(249, 253, 5, 0.075);
     text-transform: capitalize;
@@ -341,7 +329,7 @@ footer>p{
 }
 .left{
     display: flex;
-    width: 24vw;
+    width: 18vw;
     height: 100vh;
     
 }
@@ -363,4 +351,9 @@ footer>p{
     justify-content: flex-start;
     width: 100vw;
     height: auto;
+}
+@media screen and (max-width:700px){
+    .menu, .login{
+        visibility: hidden;
+    }
 }
