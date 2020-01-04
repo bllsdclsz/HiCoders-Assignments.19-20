@@ -7,6 +7,6 @@ let total = 0;
 for(minlimit; minlimit<maxlimit ; minlimit++){
     if((minlimit % a == 0) && (minlimit % b == 0)){
         total+=minlimit
-        console.log(total);
     }
 }
+console.log(total);
