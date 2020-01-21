@@ -1,17 +1,18 @@
 let ayaklar = ["inek", "inek", "tavuk", "domuz", "inek"]
 let total = 0;
+let x = 0;
 
 for(let i = 0; i < ayaklar.length; i++){
     if("inek"){
-        i=4;
+        x=4;
     }else if("tavuk"){
-        i=2;
+        x=2;
     }else if("koyun"){
-        i=4;
+        x=4;
     }else if("domuz"){
-        i=4;
+        x=0;
     }
-    total +=  i;
+    total +=  x;
 }
 
 console.log(total);
