@@ -17,3 +17,4 @@ for(let i = 0; i < ayaklar.length; i++){
 }
 
 console.log(total);
+alert(total);
