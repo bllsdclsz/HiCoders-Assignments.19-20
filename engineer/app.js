@@ -1,23 +1,24 @@
 let circle_a = circle_area(4);
-alert("area of circle");
-alert(circle_a);
+document.writeln("area of circle <br>");
+document.writeln(circle_a, "<br>");
 
 let rectangle_a = rectangle_area(3, 5);
-alert("area of rectangle");
-alert(rectangle_a);
+document.writeln("area of rectangle <br>");
+document.writeln(rectangle_a, "<br>");
 
 let circle_c = circle_circle (8);
-alert("circle of circle");
-alert(circle_c);
+document.writeln("circle of circle <br>");
+document.writeln(circle_c, "<br>");
 
 let rectangle_p = rectangle_perimeter(10, 9);
-alert("perimeter of rectangle");
-alert(rectangle_p);
+document.writeln("perimeter of rectangle <br>");
+document.writeln(rectangle_p, "<br>");
 
 let cube_v = cube_volume(13);
-alert("volume of cube");
-alert(cube_v);
+document.writeln("volume of cube <br>");
+document.writeln(cube_v, "<br>");
 
 let cube_a = cube_area(13);
-alert("sum of the lateral areas of the cube");
-alert(cube_a);
+document.writeln("sum of the lateral areas of the cube <br>");
+document.writeln(cube_a, "<br>");
+
