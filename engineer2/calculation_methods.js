@@ -20,7 +20,11 @@ function rectangle_perimeter (a, b){
 
 function cube_volume (a){
     let t = Math.pow(a, 3);
+    if(t>0)
     return Math.round(t);
+    else{
+        return ("Hatali deger. (-)eksi degerler islemde kullanilamaz.");
+    }
 }
 
 function cube_area (a){
