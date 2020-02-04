@@ -5,9 +5,7 @@ let AB = [];
 for(let i = 0;i<A.length;i++){
     for(let j = 0;j<B.length;j++){
         if(A[i]===B[j]){
-            AB += A[i];
-        }else if(!A[i]===B[j]){
-            i++;
+            AB.push(A[i]);
         }
     }
 }
