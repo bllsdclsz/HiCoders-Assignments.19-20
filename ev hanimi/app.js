@@ -5,22 +5,12 @@ document.writeln("BITEN ISLERIM <br>");
 
 islerim
     .filter(bitenler)
-    .filter(bitenisler);
+    .forEach(bitenisler);
 
 document.writeln("<br> BITMEYEN ISLERIM <br>");
 
 islerim
     .filter(bitmeyenler)
-    .filter(bitmeyenisler);
+    .forEach(bitmeyenisler);
 
-document.writeln("<br> ISLERIN HEPSI BITTI MI? <br>");
 
-islerim
-    .filter(bitenler)
-    .filter(bitenekle)
-    .filter(yazdirDogru);
-
-islerim
-    .filter(bitmeyenler)
-    .filter(bitmeyenekler)
-    .filter(yazdirYanlis);
