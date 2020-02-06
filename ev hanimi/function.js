@@ -14,3 +14,7 @@ let bitmeyenisler = function(deger){
     document.writeln("bitmeyen isler:", deger, "<br>");
 }
 
+let sorgu = function(deger){
+    let sonuc = deger.includes('x');
+    document.writeln('<br>',sonuc);
+}

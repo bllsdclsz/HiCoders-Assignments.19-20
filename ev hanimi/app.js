@@ -1,6 +1,5 @@
 let islerim = ["Yataklari düzelt", "(x) Evi süpür", "Camasirlari yika", "(x) Yemegi yap", "Alisverise git", "Cocugu okuldan al"];
 let bitenislerArray = [];
-let bitmeyenislerArray = [];
 document.writeln("BITEN ISLERIM <br>");
 
 islerim
@@ -14,3 +13,10 @@ islerim
     .forEach(bitmeyenisler);
 
 
+bitenislerArray
+    .push(islerim.filter(bitenler));
+
+document.writeln('<br> ISLERIN HEPSI BITTI MI?');
+    
+islerim 
+    .every(sorgu);
