@@ -1,3 +1,8 @@
+function output(data){
+    let result = document.getElementById("result"); // DOM API
+    result.innerHTML += data;
+}
+
 function filterUnwantedChars(auto){
     let x = auto.filter(x=> !x.includes(";)"));
     return x;
