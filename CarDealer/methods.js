@@ -1,15 +1,11 @@
 function filterUnwantedChars(auto){
-    if(auto.includes(";)")){
-        return false;
-    }
-    return true;
+    let x = auto.filter(x=> !x.includes(";)"));
+    return x;
 }
 
 function filterCarsIncludingCharO(auto){
-    if(auto.includes("o")){
-        return true;
-    }
-    return false;
+    let x = auto.filter(x=> x.includes("o"));
+    return x;
 }
 
 function findNumberOfChar(text, char){
@@ -33,44 +29,36 @@ function findAutosWithTwoOs(auto){
     return false;
 }
 
-function lengthless5(auto){
-    if(auto.length<5){
-       return true;
-    }else{
-       return false;
-    }
-}
-
-function firstletter (auto){
-    if(auto.startsWith("f")){
-        return true;
-    }else{
-        return false;
-    }
-}
-
-function lastletterx (auto){
-    let x = auto + ("x");
+function lengthLess5(auto){
+    let x = auto.filter(x=> x.length<5);
     return x;
 }
 
-function lengthbetween6and3(auto){
-        if(auto.length<6){
-            if(auto.length>3){
-                if(auto.includes("a")){
-                    return true;
-                }else{
-                    return false;
-                };
-            }else{
-                return false;
-            };
-        }else{
-            return false;
-        }
+function fLettersHaveX (auto){
+    let x = auto.filter(x=> x.startsWith("f"));
+    let y = x.map(x=> x + "x")
+    return y;
 }
 
 function myFavorite(auto){
-    let x = ("my favorite ") + auto;
-    return x;
+    let x = auto.filter(x=> x.length<6 && x.length>3 && x.includes("a"));
+    let y = x.map(x=> "my favorite " + x);
+    return y;
+}
+
+function findAutosWithOandA(auto){
+    let filterIncludingAutosWithOandaA = auto.filter(x=> x.includes("o")&&x.includes("a"))
+    let eachAutosLength = filterIncludingAutosWithOandaA.map(x=>x.length);
+    let sum = (a, b) => a+b;
+    let sumOfAutosLength = eachAutosLength.reduce(sum);
+    return filterIncludingAutosWithOandaA + "<br>Her bir arabanin karakter sayisi: " +eachAutosLength 
+    + "<br>Karakter sayilarinin toplami: " +sumOfAutosLength;
+}
+
+function findAutosWithOorI(auto){
+    let x = auto.filter(x=> x.includes("o") || x.includes("i"));
+    let y = x.map(x=> x.length);
+    let sum = (a, b) => a+b;
+    let z = y.reduce(sum);
+    return x + "<br>O veya I harfi olan arabalarin karakter sayisi: " + y + "<br>Arabalarin toplam karakter sayisi: " + z;
 }
