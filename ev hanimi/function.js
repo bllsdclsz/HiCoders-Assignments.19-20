@@ -1,20 +1,21 @@
-let bitenler = function(deger){
-    return deger.includes("x");
+class recommendFunctions{
+    static output(data){
+        let result = document.getElementById("result"); // DOM API
+        result.innerHTML += data;
+    }
+    
+    static bitenler(deger){
+    let x = deger.filter(x=> x.includes("x"));
+    return "biten isler:" + x + "<br>";
 }
 
-let bitenisler = function(deger){
-    document.writeln("biten isler:", deger, "<br>");
+    static bitmeyenler(deger){
+    let x = deger.filter(x=> !x.includes("x"));
+    return "bitmeyen isler:" + x + "<br>"
 }
 
-let bitmeyenler = function(deger){
-    return !deger.includes("x");
+    static sorgu(deger){
+    let x = deger.every(x=> x.includes("x"))
+    return x;
 }
-
-let bitmeyenisler = function(deger){
-    document.writeln("bitmeyen isler:", deger, "<br>");
-}
-
-let sorgu = function(deger){
-    let sonuc = deger.includes('x');
-    document.writeln('<br>',sonuc);
 }

@@ -1,22 +1,11 @@
 let islerim = ["Yataklari düzelt", "(x) Evi süpür", "Camasirlari yika", "(x) Yemegi yap", "Alisverise git", "Cocugu okuldan al"];
-let bitenislerArray = [];
-document.writeln("BITEN ISLERIM <br>");
-
-islerim
-    .filter(bitenler)
-    .forEach(bitenisler);
-
-document.writeln("<br> BITMEYEN ISLERIM <br>");
-
-islerim
-    .filter(bitmeyenler)
-    .forEach(bitmeyenisler);
 
 
-bitenislerArray
-    .push(islerim.filter(bitenler));
+let bitenIsler = recommendFunctions.bitenler(islerim);
+recommendFunctions.output("BITEN ISLERIM <br>" + bitenIsler);
 
-document.writeln('<br> ISLERIN HEPSI BITTI MI?');
-    
-islerim 
-    .every(sorgu);
+let bitmeyenIsler = recommendFunctions.bitmeyenler(islerim);
+recommendFunctions.output("<br>BITMEYEN ISLERIM <br>" + bitmeyenIsler);
+
+let islerBittiMi = recommendFunctions.sorgu(islerim);
+recommendFunctions.output("<br>ISLERIN HEPSI BITTI MI?<br>" + islerBittiMi);
