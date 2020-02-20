@@ -1,0 +1,1 @@
+output(sayiCevirici("1101101"));
