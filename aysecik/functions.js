@@ -3,13 +3,12 @@ function ekranaYaz(pText){
     output.innerHTML = output.innerHTML + "<br>" + pText;
 }
 
-
 function bilgiAl(pText){
     let girilenDeger = prompt(pText);
     return girilenDeger;
 }
 
-function rakamlar (pSayi){
+function rakamlar(pSayi){
     if(pSayi==="sifir"){
         return 0;
     }else if(pSayi==="bir"){
@@ -30,8 +29,8 @@ function rakamlar (pSayi){
         return 8;
     }else if(pSayi==="dokuz"){
         return 9;
-    }else 
-     alert("Yazi ile bir rakam girmelisiniz");
+    }else{ 
+        alert("Yazi ile bir rakam girmelisiniz");}
 }
 
 function tekrarCevir(pSayi){
@@ -57,6 +56,6 @@ function tekrarCevir(pSayi){
         return "bir";
     }else if(pSayi===0){
         return "sifir";
-    }else
-    return "Hatali sonuc"
+    }else{
+        return "Hatali sonuc";}
 }
