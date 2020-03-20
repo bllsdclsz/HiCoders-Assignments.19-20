@@ -6,12 +6,10 @@ main{
     min-height: 100px;
     text-align: center;
 }
-
 main>div{
     display: flex;
     justify-content: space-evenly;
 }
-
 main>div>div{
     background-color: darkgray;
     border: 2px solid #866342;

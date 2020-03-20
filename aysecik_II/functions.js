@@ -20,7 +20,7 @@ function convertStringstoNumbers(sayiDizisi, cevrilenSayilarinDizisi, toNumber){
             }
         }
     }
-    }
+}
 
 function sayilarinOrtalamasinial(sum, pSayiDizisi){
     let uzunluk=pSayiDizisi.length
