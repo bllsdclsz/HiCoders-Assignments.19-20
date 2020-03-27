@@ -1,0 +1,37 @@
+main{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(58, 55, 55);
+    width: 800px;
+    margin-left: 250px;
+}
+div{
+    display: block;
+}
+ul{
+    list-style: none;
+}
+.menus>li{
+    background-color: rgb(197, 179, 177);
+    margin: 2px;
+    padding: 1px;
+    border: 3px;
+    border-radius: 5%;
+    width: 180px;
+    height: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 24px;
+}
+.orders>li{
+    background-color: rgb(172, 144, 119);
+    margin: 2px;
+    padding: 1px;
+    border: 3px;
+    border-radius: 5%;
+    width: 180px;
+    height: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 24px;
+}
