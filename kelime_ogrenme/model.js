@@ -8,7 +8,7 @@ const questions = [{
         options: ["Sandalye", "Gökyüzü", "Askilik", "Ceviz"],
         answer: 3
     },
-    {
+    {git 
         q: "What does 'Seife' mean?",
         options: ["Yastik", "Sabun", "Tabak", "Ceviz"],
         answer: 1
