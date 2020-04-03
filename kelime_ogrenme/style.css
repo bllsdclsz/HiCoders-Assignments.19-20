@@ -1,0 +1,20 @@
+* {
+    text-align: center;
+}
+
+.row {
+    justify-content: center;
+    align-content: center;
+}
+
+.tryAgainButton {
+    height: 50px;
+    width: 150px;
+    border: 1px solid #007bff;
+    background-color: #007bff;
+    border-radius: 5%;
+    outline: none;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}

@@ -16,5 +16,9 @@
  * -Programin sonunda kac dogru yapildigi ekrana yazdirilmali.
  */
 
-let Quiz = new Questions(questions);
-loadQuestions();
+/**
+ * classi bir degiskene atayip ana fonksiyonlari calistiriyoruz.
+ */
+let startQuiz = new Quiz(randomedArray);
+startQuiz.loadQuestions()
+startQuiz.addEventChoice()
