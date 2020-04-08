@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhasebeci Hanim</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 mt-3">
+                <form class="was-validated">
+                    <div class="col-8 form-group">
+                        <label for="name" class="mr-sm-2">Name</label>
+                        <input type="text" name="name" id="name" class="form-control mb-2 mr-sm-2" placeholder="Name"
+                            required>
+                        <div class="valid-feedback"></div>
+                    </div>
+                    <div class="col-8 form-group">
+                        <label for="surname" class="mr-sm-2">Surname</label>
+                        <input type="text" name="surname" id="surname" class="form-control mb-2 mr-sm-2"
+                            placeholder="Surname" required>
+                        <div class="valid-feedback"></div>
+                    </div>
+                    <div class="col-8 form-group">
+                        <label for="kanton" class="mr-sm-2">Kanton</label>
+                        <input type="text" name="kanton" id="kanton" class="form-control mb-2 mr-sm-2"
+                            placeholder="Kanton" required>
+                        <div class="valid-feedback"></div>
+                    </div>
+                </form>
+                <button type="submit" id="saveButton" class="btn btn-primary mt-2 ml-3">Save</button>
+            </div>
+            <div id="aside" class="col-6 mt-3">
+                <div id="searchEngine">
+                    <form id="searchForm">
+                        <label for="Search_Engine" class="mr-sm-2">Search</label>
+                        <input type="text" name="search" id="search" class="form-control mb-2 mr-sm-2"
+                            placeholder="Search somebody">
+                    </form>
+                    <div id="searchArea">
+                        <ul id="infoList" class="list-group">
+                        </ul>
+                    </div>
+                </div>
+                <input type="button" value="Sort Name" id="sortName" class="btn btn-primary mt-2 ml-2">
+                <input type="button" value="Sort Surname" id="sortSurname" class="btn btn-primary mt-2 ml-4">
+                <input type="button" value="Sort Kanton" id="sortKanton" class="btn btn-primary mt-2 ml-4">
+            </div>
+        </div>
+    </div>
+    <script src="functions.js"></script>
+    <script src="model.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
