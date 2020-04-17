@@ -1,0 +1,18 @@
+* {
+    text-align: center;
+}
+
+#time {
+    float: left;
+}
+
+#answer {
+    width: 150px;
+}
+
+#time{
+    border: none;
+    pointer-events: none;
+    background-color: initial;
+    width: 50px;
+}

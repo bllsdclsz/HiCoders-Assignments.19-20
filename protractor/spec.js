@@ -1,8 +1,15 @@
 //spec.js
-describe('Protractor Demo App', function(){
-    it('should have a title', function(){
-        browser.get('http://juliemr.github.io/protractor-demo/');
-        
-        expect(browser.getTitle()).toEqual('Super Calculator');
-    })
-})
+describe('Smoke test', () => {
+    it('should behave...', () => {
+        browser.ignoreSynchronization = true;
+        browser.get('https://www.google.com');
+        browser.manage().window().maximize();
+        browser.get('https://www.bbc.com');
+        browser.getCurrentUrl().then(function(url){
+            console.log(url);
+        })
+        browser.getTitle().then(function(title){
+            console.log(title);
+        })
+    });
+});
