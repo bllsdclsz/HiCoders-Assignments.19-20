@@ -71,23 +71,27 @@ let singlePerson = {
 
 let mainDom = document.querySelector("#main-bar")
 
+/**template fonksiyonu icinde obje olusturma */
 // let myInfo = "<p>My name is {{firstname}}\n{{lastname}}. I am {{age}} years old and my job is {{job}}.</p>"
 // let template = Handlebars.compile(myInfo);
 // mainDom.innerHTML = template({firstname:"bilal", lastname:"cilesiz", age:"26", job:"Web-Dev"})
 
+/**template fonksiyonu disindaki bir objeden cagirma */
 // let myPets = "<ul>{{#each pet}}<li>My name is {{name}} and {{age}} years old.</li>{{/each}}</ul>"
 // let template = Handlebars.compile(myPets)
 // mainDom.innerHTML = template(pets);
 
+/**triple-stash örnegi */
 // let quoteInfo = "<p>My favorite quote is {{{quote}}}</p>";
 // let template = Handlebars.compile(quoteInfo);
 // mainDom.innerHTML = template({quote : "<strong><em>'Two things are infinite: the universe and human stupidity; and I'm not sure about the universe'.</em></strong>"})
 
-//singlePerson objesi
+/**singlePerson objesi-#with örnegi*/
 // let myInfo = "{{#with person1}}<p>My name is {{firstname}}\n{{lastname}}. I am {{age}} years old and my job is {{job}}.</p>{{/with}}"
 // let template = Handlebars.compile(myInfo);
 // mainDom.innerHTML = template(singlePerson);
 
+/**Is basvuru degerlendirme kartlari-#each örnegi */
 // let personInfo = `  {{#each persons}}<div class="card">
 //                     <div class="card-header">From {{country}}</div>
 //                     <div class="card-body">
@@ -101,9 +105,10 @@ let mainDom = document.querySelector("#main-bar")
 // let template = Handlebars.compile(personInfo);
 // mainDom.innerHTML = template(personObject);
 
+/**Youtube yazisina youtube linkini baglama */
 // Handlebars.registerHelper("createLink", function(text, url){
-//     text = Handlebars.Utils.escapeExpression(text);
-//     url = Handlebars.Utils.escapeExpression(url);
+//     text = Handlebars.escapeExpression(text);
+//     url = Handlebars.escapeExpression(url);
 //     let theLink = `<a href="${url}">${text}</a>`;
 //     return new Handlebars.SafeString(theLink);
 // })
@@ -111,4 +116,6 @@ let mainDom = document.querySelector("#main-bar")
 // let linkMaker = `<p>{{createLink "Youtube" "https://www.youtube.com/"}}</p>`
 // let template = Handlebars.compile(linkMaker);
 // mainDom.innerHTML = template()
+
+
 
