@@ -13,4 +13,4 @@
  * -Doktor(1sn dinlenme) müsaitse siradaki hasta hayvan tedavi edilir.
  * -Bu böyle gün sonuna kadar devam eder.(180 sn)
  */
-new Line().addPetsToArray();
+new Manager();

@@ -1,24 +1,43 @@
-class Line{
-    constructor(){
-        this.pets = new Pets();
-        this.petInTheLine = [];
+class Line {
+    constructor() {
         this.anchovyLine = [];
         this.catLine = [];
-        this.crowLine = []; 
+        this.crowLine = [];
     }
 
-    returnPets() {
-        let randomer = this.pets.petSpecies[Math.floor(Math.random() * 3)];
-        this.petInTheLine.push(randomer);
-        return this.pets;
+    returnAnchovy(){
+        return this.anchovyLine.push(new Pets(new Utility().generateRandomName(), "anchovy", new Utility().generateRandomAge(), 2, 40))
     }
 
-    addPetsToArray() {
+    addAnchovyToArray() {
         let randomer = Math.ceil(Math.random() * 100);
         for (let i = 0; i < randomer; i++) {
-            this.returnPets();
+            this.returnAnchovy();
         }
+        console.log(this.anchovyLine)
+    }
 
-        console.log(this.petInTheLine)
+    returnCat(){
+        return this.catLine.push(new Pets(new Utility().generateRandomName(), "cat", new Utility().generateRandomAge(), 6, 100));
+    }
+
+    addCatToArray(){
+        let randomer = Math.ceil(Math.random() * 100);
+        for (let i = 0; i < randomer; i++) {
+            this.returnCat();
+        }
+        console.log(this.catLine)
+    }
+
+    returnCrow(){
+        return this.crowLine.push(new Pets(new Utility().generateRandomName(), "crow", new Utility().generateRandomAge(), 4, 150));
+    }
+
+    addCrowToArray(){
+        let randomer = Math.ceil(Math.random() * 100);
+        for (let i = 0; i < randomer; i++) {
+            this.returnCrow();
+        }
+        console.log(this.crowLine)
     }
 }
