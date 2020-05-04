@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferruh Emminin Sekerci Dükkani</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <automat id="otomat" class="col-6 mt-3">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Candies</h2>
+                    </div>
+                    <div class="card-body">
+                        <label for="candies">Choose a candy:</label>
+                        <select id="option-list"></select>
+                        <label for="number of candies">Determine an amount:</label>
+                        <input type="number" id="pieces">
+                    </div>
+                    <div class="card-footer">
+                        <input type="button" value="Add to Box" id="button">
+                        <input type="button" value="New Order" id="reset-button">
+                    </div>
+                </div>
+
+            </automat>
+            <order id="order" class="col-6  mt-3">
+                <ul id="order-list" class="list-group">
+                    <h4 class="list-group-heading">Order Box</h4>
+                </ul>
+            </order>
+        </div>
+    </div>
+
+
+
+    <!-- models -->
+    <script src="./models/Candies.js"></script>
+    <script src="./models/Bags.js"></script>
+    <!-- views -->
+    <script src="./views/Otomat.js"></script>
+    <!-- constroller -->
+    <script src="./controllers/Calculator.js"></script>
+    <script src="./controllers/Manager.js"></script>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
