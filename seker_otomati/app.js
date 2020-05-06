@@ -11,6 +11,5 @@
  * -Hangi büyüklükte poset secilmisse, sekerlerin hacimlarine göre kac poset gerekecegi hesaplanir.
  * -Poset ücreti de toplam ücrete eklenir.
  */
-
 let manager = new Manager();
-manager.start();
+manager.start()
