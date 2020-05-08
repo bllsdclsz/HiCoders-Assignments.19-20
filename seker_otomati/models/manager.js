@@ -1,44 +1,65 @@
+/**
+ * Manager yönetici class.
+ */
 class Manager {
-    candyPrice = 0;
-    bagPrice = 0;
-    total = 0;
-    addedCandy = [];
-    constructor() {
-        this.candy = new Candies;
-        this.candy.returnCandy();
-        this.otomatview = new Otomat();
+    candyList = new Candies().listCandy();
+    bagList = new Bags().listBag();
+    constructor(pViewBox, pViewController) {
+        this.viewBox = pViewBox;
+        this.viewController = pViewController;
+        this.candyPrice = 0;
+        this.candiesVolume = 0;
     }
 
-    addToOrderList() {
-        document.querySelector("#add-box").addEventListener('click', () => {
-            this.candy.currentAmount = document.querySelector("#number").value;
-            document.querySelector("#number").value > 0 ? this.addedCandy.push(this.otomatview.addToList()) : false;
-            console.log(this.addedCandy)
-            console.log(document.querySelector("select").options[document.querySelector("select").selectedIndex].text)
-            console.log(this.checkCandyName());
+    /**
+     * Butona tiklandiginda islemleri gerceklestirir.
+     */
+    addCandyToBox(pCandy) {
+        pCandy.piece++;
+        this.candyPrice += pCandy.price;
+        this.candiesVolume += pCandy.volume;
+        this.viewController(this.candyList, this.bagList, this.candyPrice, this.candiesVolume)
+    }
+
+    /**
+     * Secilen öge ile cagrilan ögenin ayni olup olmadigini sorguluyor.
+     */
+    checkCandyIds(pItem) {
+        this.candyList.map((candy) => {
+            if (pItem.target.id === candy.name) this.addCandyToBox(candy);
         })
+    }
+
+    /**
+     * Her seker butonuna EventListener ekler.
+     */
+    addEventCandies() {
+        document.querySelectorAll('[data-candy]').forEach(candy =>
+            candy.addEventListener('click', this.checkCandyIds.bind(this)))
     }
 
     addEventPayButton() {
-        document.querySelector("#pay-order").addEventListener('click', () => {
-            location.reload();
+        document.querySelector("#payment").addEventListener('click', () => {
+            this.showSweetAlert()
         })
     }
 
-    checkCandyName() {
-        let selectedItem = document.querySelector("select").selectedIndex;
-        let filteredcandies = this.addedCandy.map(item => item[1])
-            .filter((candyName) =>
-                candyName == document.querySelector("select").options[selectedItem].text) ?
-            false : this.addToOrderList();
-            console.log(filteredcandies)
-            return filteredcandies;
+    showSweetAlert() {
+        Swal.fire({
+            title: "<b>All order paid</b>",
+            text: "Thank you for choosing us!",
+            icon: "success",
+            focusConfirm : true,
+            confirmButtonText : `<i onclick="location.reload();">Come Again!</i>`
+        })
     }
 
+    /**
+     * Programi baslatir.
+     */
     start() {
-        this.otomatview.addToDom(this.candy.candyList, this.candyPrice, this.bagPrice, this.total);
-        this.addToOrderList();
-        this.checkCandyName();
+        this.viewBox(this.candyList);
+        this.addEventCandies();
         this.addEventPayButton();
     }
 }
