@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katil Ismet</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="header" hidden>Müsteri Listesi</h1>
+    <!-- LoginView -->
+    <login id="login-container">
+        <div id="login-inline-container">
+            <form class="form">
+                <input type="text" class="form-control" name="login" id="login">
+                <input type="button" class="btn btn-dark form-control" value="Login" id="login-button">
+            </form>
+        </div>
+    </login>
+
+    <!-- view -->
+    <script src="./src/view/LoginView.js"></script>
+    <script src="./src/view/View.js"></script>
+    <!-- model -->
+    <script src="./src/model/Login.js"></script>
+    <script src="./src/model/Customer.js"></script>
+    <script src="./src/model/Victim.js"></script>
+    <script src="./src/model/CustomerManager.js"></script>
+    <script src="./src/model/Eventer.js"></script>
+    <script src="./src/model/Controller.js"></script>
+    <!-- test -->
+    <script src="app.js"></script>
+
+</body>
+
+</html>
