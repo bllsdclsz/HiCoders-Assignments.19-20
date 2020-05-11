@@ -16,6 +16,6 @@
  * -Sistemdeki Eventlari tutan bir event class olmali.                                                     **Eventer**
  * -Sisteme girildikten sonra bunlari ekranda göstermek icin view class olmali.                            **View**
  */
-new Login();
 
-
+const manager = new Manager();
+const customManager = new CustomerManager();

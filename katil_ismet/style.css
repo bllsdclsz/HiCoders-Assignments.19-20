@@ -1,11 +1,13 @@
-*, *::before, *::after{
+* {
     text-align: center;
 }
-html, body{
+
+html,
+body {
     background-color: tomato;
 }
 
-#login-container{
+#login-container {
     display: grid;
     justify-content: center;
     align-content: center;
@@ -13,7 +15,7 @@ html, body{
     height: 100vh;
 }
 
-#header{
+#header {
     color: white;
     font-family: 'Tahoma, sans-serif';
     text-transform: uppercase;
