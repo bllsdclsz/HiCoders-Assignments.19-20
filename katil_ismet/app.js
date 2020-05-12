@@ -18,4 +18,4 @@
  */
 
 const manager = new Manager();
-const customManager = new CustomerManager();
+manager.start();
