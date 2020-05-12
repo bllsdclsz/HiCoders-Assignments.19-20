@@ -19,3 +19,8 @@
 
 const manager = new Manager();
 manager.start();
+
+/**
+ * view kismini tamamen degistir her birini bir class yap.
+ * display kullanma! active ? true : false kullan.
+ */

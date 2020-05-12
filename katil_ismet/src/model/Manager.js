@@ -1,6 +1,6 @@
 class Manager {
     constructor() {
-        this.customerManager = new CustomerManager;
+        this.customerManager = new CustomerManager();
         this.setViews();
         this.showCurrentView(this.views.login);
         this.addEventButton();
@@ -17,7 +17,6 @@ class Manager {
         Object.values(this.views).forEach(a => a.hide());
         view.show();
     }
-
 
     show(place) {
         place.style.display = '';
@@ -38,11 +37,7 @@ class Manager {
     addEventToCustomers() {
         document.querySelectorAll(`[data-customer]`).forEach(item =>
             item.addEventListener('click', () => {
-                if (item.nextElementSibling.style.display == '') {
-                    this.hide(item.nextElementSibling)
-                } else if (item.nextElementSibling.style.display == 'none') {
-                    this.show(item.nextElementSibling)
-                }
+
             })
         )
     }
@@ -50,11 +45,7 @@ class Manager {
     addEventToVictims() {
         document.querySelectorAll(`[data-victim]`).forEach(item =>
             item.addEventListener('click', () => {
-                if (item.nextElementSibling.style.display == '') {
-                    this.hide(item.nextElementSibling)
-                } else if (item.nextElementSibling.style.display == 'none') {
-                    this.show(item.nextElementSibling)
-                }
+
             })
         )
     }
@@ -63,9 +54,8 @@ class Manager {
         let checkbox = document.querySelectorAll(`[data-victim]>input[type=checkbox]`);
         checkbox.forEach(item => {
                 item.addEventListener('click', ()=>{
-                    item.parentElement.setAttribute(".checkedbox")
+
                 })
-                console.log(checkbox)
             })
         }
 
