@@ -1,6 +1,6 @@
 class CustomerManager {
     constructor() {
-        this.utility = new Utility;
+        this.utility = new Utility();
         this.customerArray = [];
         this.victimArray = [];
         this.addToCustomerArray();
@@ -12,11 +12,21 @@ class CustomerManager {
     }
 
     returnVictim() {
-        return new Victim(this.utility.generateRandomName(), this.utility.generateRandomAge(),
-            this.utility.generateRandomSecondaryAddress(), this.utility.generateRandomAddress(), this.utility.generateRandomCity(),
-            this.utility.generateRandomJob(), this.utility.generateRandomCompanyName(),
-            this.utility.generateRandomCompanySecondaryAddress(), this.utility.generateRandomCompanyAddress(),
-            this.utility.generateRandomHeight(), this.utility.generateRandomWeight());
+        return new Victim(this.utility.generateRandomName(), 
+                            this.utility.generateRandomAge(), 
+                            this.utility.generateRandomJob());
+    }
+
+    returnAddress(){
+        return new Address(this.utility.generateRandomSecondaryAddress(), 
+                            this.utility.generateRandomAddress(), 
+                            this.utility.generateRandomCity());
+    }
+
+    returnCompanyAddress(){
+        return new Address(this.utility.generateRandomCompanySecondaryAddress(),
+                            this.utility.generateRandomCompanyAddress(), 
+                            this.utility.generateRandomCity());
     }
 
     addToCustomerArray() {
