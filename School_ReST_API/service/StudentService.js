@@ -1,17 +1,48 @@
-class StudentService{
-    constructor(){}
+/**
+ * Student classini test etmek icin olusturulmustur.
+ */
+class StudentService {
+    constructor() {
+        this.database = [];
+    }
 
-    addStudent(){}
+    /**
+     * 
+     * @param {object} pStudent nesnesini database'e ekler.
+     */
+    addStudent(pStudent) {
+        this.database.push(pStudent)
+    }
 
-    getStudents(){}
+    /**
+     * database'i döndüür.
+     */
+    getStudents() {
+        return this.database;
+    }
 
-    getStudentById(pId){}
+    /**
+     * 
+     * @param {integer} pId sahip olan objeyi döndürür.
+     */
+    getStudentById(pId) {
+        return this.database.find(student => student.id == pId);
+    }
 
-    putStudent(){}
+    putStudent(pId) {
 
-    deleteStudents(){}
+    }
 
-    deleteStudentById(pId){}
+    /**
+     * 
+     * @param {integer} pId sahip olan objeyi siler.
+     */
+    deleteStudentById(pId) {
+        this.database = this.database.filter(student => student.id != pId);
+    }
 }
 
+/**
+ * classi disariya gönderiyoruz.
+ */
 module.exports = new StudentService();
