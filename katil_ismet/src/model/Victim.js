@@ -1,7 +1,10 @@
-class Victim {
-    constructor(pName, pAge, pJob) {
-        this.name = pName;
-        this.age = pAge;
-        this.job = pJob;
+class Victim{
+    constructor(pName){
+        this.name = pName
+        this.addresses = [];
+    }
+
+    addAddress(pAddress){
+        this.addresses.push(pAddress);
     }
 }

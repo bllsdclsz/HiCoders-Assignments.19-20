@@ -43,7 +43,7 @@ app.post('/student', function (req, res) {
 app.put('/student/:id', function (req, res) {
     let st = req.body;
     let student = new Student(st.id, st.name, st.age, st.grade)
-    studentService.putStudent(student);
+    studentService.updateStudent(student, req.params.id);
     res.send('Bilgileri güncellenen ogrenci')
 })
 
@@ -86,7 +86,10 @@ app.post('/teacher', function (req, res) {
  * id'e sahip ögretmeni getirip bilgilerini günceller.
  */
 app.put('/teacher/:id', function (req, res) {
-    res.send('Bilgileri güncellenen Ogretmen')
+    let tch = req.body;
+    let teacher = new Teacher(tch.id, tch.name, tch.age, tch.grade)
+    teacherService.updateTeacher(teacher, req.params.id);
+    res.send('Bilgileri güncellenen ogretmen')
 })
 
 /**

@@ -1,7 +1,7 @@
 class Address{
-    constructor(pSecondaryAddress, pAddress, pCity){
-        this.secondaryAddress = pSecondaryAddress;
-        this.address = pAddress;
-        this.city = pCity;
+    constructor(pStreet, pPlz, pOrt){
+        this.street = pStreet;
+        this.plz = pPlz;
+        this.ort = pOrt;
     }
 }

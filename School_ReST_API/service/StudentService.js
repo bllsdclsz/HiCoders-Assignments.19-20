@@ -29,8 +29,14 @@ class StudentService {
         return this.database.find(student => student.id == pId);
     }
 
-    putStudent(pId) {
-
+    /**
+     * 
+     * @param {object} pStudent yeni girilen deger.
+     * @param {integer} pId sahip olan cikarilip yeni bilgiler girilerek güncelleniyor.
+     */
+    updateStudent(pStudent, pId) {
+        this.database = this.database.filter(s => s.id!=pId)
+        this.database.push(pStudent)
     }
 
     /**

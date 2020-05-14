@@ -19,6 +19,7 @@
 
 const manager = new Manager();
 manager.start();
+new AddressForm()
 
 /**
  * view kismini tamamen degistir her birini bir class yap.
