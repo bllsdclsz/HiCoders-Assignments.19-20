@@ -9,10 +9,6 @@ class Utility {
         return faker.name.findName();
     }
 
-    generateRandomAge() {
-        return Math.floor(Math.random() * 80) + 18;
-    }
-
     generateRandomSecondaryAddress() {
         return faker.address.secondaryAddress();
     }
@@ -24,27 +20,11 @@ class Utility {
         return faker.address.city();
     }
 
-    generateRandomJob() {
-        return faker.name.jobType();
-    }
-
-    generateRandomCompanyName() {
-        return faker.company.companyName();
-    }
-
     generateRandomCompanySecondaryAddress() {
         return faker.address.secondaryAddress();
     }
 
     generateRandomCompanyAddress() {
         return faker.address.streetAddress();
-    }
-
-    generateRandomHeight() {
-        return Math.floor(Math.random() * 50) + 150;
-    }
-
-    generateRandomWeight() {
-        return Math.floor(Math.random() * 60) + 50;
     }
 }

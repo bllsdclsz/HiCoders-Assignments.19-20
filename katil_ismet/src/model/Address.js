@@ -1,7 +1,10 @@
+/**
+ * Address tanimlamalarini yapar.
+ */
 class Address{
-    constructor(pStreet, pPlz, pOrt){
-        this.street = pStreet;
-        this.plz = pPlz;
-        this.ort = pOrt;
+    constructor(pSecondaryAddress, pAddress, pCity){
+        this.secondaryAddress = pSecondaryAddress;
+        this.address = pAddress;
+        this.city = pCity;
     }
 }

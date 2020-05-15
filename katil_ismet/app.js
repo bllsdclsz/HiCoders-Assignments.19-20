@@ -7,21 +7,17 @@
  *  listede ismi silik gösterilmelidir.
  * 
  * ANALIZ
- * -Ismetin sisteme girmesi icin bir login ekranina ihtiyaci vardir. Sisteme girmesiyle program baslar.    **Login** && **LoginView**
- * -Müsterilerini liste halinde görecegi icin bir müsteri classi ve olmalidir.                             **Customer** 
- *      -Onlari bir arrayde tutmali ve sisteme liste halinde yerlestirmelidir.                             **CustomerManager**
- * -Müsterilerin üzerinde tikladiginda maktul listesi görecegi icin maktul class olmadir.                  **Victim**
- *      -Onlarda yine ayri ayri arraylerde olmalidir.                                                      **VictimManager**
- * -Isleri tamalanan kisiler isaretlenecegi icin bir control class olmali.                                 **Controller**
- * -Sistemdeki Eventlari tutan bir event class olmali.                                                     **Eventer**
- * -Sisteme girildikten sonra bunlari ekranda göstermek icin view class olmali.                            **View**
+ * -Ismetin sisteme girmesi icin bir login ekranina ihtiyaci vardir. Sisteme girmesiyle program baslar.    
+ * -Müsterilerini liste halinde görecegi icin bir müsteri classi olmalidir.                
+ *      -Onlari bir arrayde tutmali ve sisteme liste halinde yerlestirmelidir.                      
+ * -Müsterilerin üzerinde tikladiginda maktul listesi görecegi icin maktul class olmadir.  
+ *      -Onlarda yine ayri ayri arraylerde olmalidir.                                                      
+ * -Maktullerin üzerine tiklandiginda adres listesi görecegi icin adres class olmalidir.
+ * -Isleri tamalanan kisiler isaretlenecegi icin bir control class olmali.                                 
+ * -Sistemdeki Eventlari tutan bir event class olmali.                                                     
+ * -Sisteme girildikten sonra bunlari ekranda göstermek icin view class olmali.                           
  */
 
 const manager = new Manager();
 manager.start();
-new AddressForm()
-
-/**
- * view kismini tamamen degistir her birini bir class yap.
- * display kullanma! active ? true : false kullan.
- */
+console.log(new Manager().createCustomerList())

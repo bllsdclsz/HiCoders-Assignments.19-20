@@ -1,13 +1,18 @@
+/**
+ * Adreslerin görüntü classini olusturur.
+ */
 class AddressView {
-    #address = null;
     constructor(pAddress){
-        this.#address = pAddress;
+        this.address = pAddress;
     }
 
+    /**
+     * Adresleri DOM'a yazdirir.
+     */
     toString(){
         return `<address>
-                <p>Home Address: ${this.#address.secondaryAddress, this.#address.address, this.#address.city}</p><br>
-                <p>Company Address: ${this.#address.secondaryAddress, this.#address.address, this.#address.city}</p>
+                <p>Home Address: ${this.address.addresses[0]}</p><br>
+                <p>Company Address: ${this.address.addresses[1]}</p>
                 </address>`
     }
 }

@@ -1,31 +1,48 @@
+/**
+ * Tüm programi yöneten class.
+ */
 class Manager {
     constructor() {
         this.customerManager = new CustomerManager();
         this.setViews();
         this.showCurrentView(this.views.login);
-        this.addEventButton();
     }
 
+    /**
+     * Görüntüleri tutar.
+     */
     setViews() {
         this.views = {
             login: new LoginView(),
-            user: new UserView()
+            customer: new CustomerView()
         }
     }
 
+    /**
+     * Ekrandaki göstrilecek olan görüntüyü ayarlar.
+     */
     showCurrentView(view) {
         Object.values(this.views).forEach(a => a.hide());
         view.show();
     }
 
+    /**
+     * Görüntüyü gösterir.
+     */
     show(place) {
         place.style.display = '';
     }
 
+    /**
+     * Görüntüyü saklar.
+     */
     hide(place) {
         place.style.display = 'none';
     }
 
+    /**
+     * Login butonuna EventListener ekler.
+     */
     addEventButton() {
         document.querySelector("#login-button").addEventListener('click', () => {
             if (this.views.login.login()) {
@@ -34,34 +51,19 @@ class Manager {
         })
     }
 
-    addEventToCustomers() {
-        document.querySelectorAll(`[data-customer]`).forEach(item =>
-            item.addEventListener('click', () => {
-
-            })
-        )
+    /**
+     * Müsteri listesini DOM'a yazdirir.
+     */
+    createCustomerList(pCustomerList){
+        let customerList = document.querySelector("#customer-list");
+        customerList.innerHTML += `${new CustomerView(pCustomerList)}`;
     }
 
-    addEventToVictims() {
-        document.querySelectorAll(`[data-victim]`).forEach(item =>
-            item.addEventListener('click', () => {
-
-            })
-        )
+    /**
+     * Programi baslatir.
+     */
+     start() {
+        this.addEventButton();
+        this.createCustomerList(new CustomerManager());
     }
-
-    addEventToCheckboxes() {
-        let checkbox = document.querySelectorAll(`[data-victim]>input[type=checkbox]`);
-        checkbox.forEach(item => {
-                item.addEventListener('click', ()=>{
-
-                })
-            })
-        }
-
-        start() {
-            this.addEventToCustomers();
-            this.addEventToVictims();
-            this.addEventToCheckboxes();
-        }
-    }
+}
