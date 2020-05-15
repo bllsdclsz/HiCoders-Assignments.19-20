@@ -60,10 +60,40 @@ class Manager {
     }
 
     /**
+     * Müsterilerin üzerine tiklandiginda maktul listesi acilmasi icin müsteriye EventListener ekler.
+     */
+    addEventButtonCustomer(){
+        document.querySelector("[data-customer]").forEach(customer => 
+            customer.addEventListener('click', ()=>{
+                if(document.querySelector(`${[data-customer]}>li`).style.display=="none"){
+                    document.querySelector(`${[data-customer]}>li`).style.display=="";
+                }else{
+                    return false;
+                }
+            }))
+    }
+
+    /**
+     * Maktullerin üzerine tiklandiginda adres listesi acilmasi icin maktule EventListener ekler.
+     */
+    addEventButtonVictim(){
+        document.querySelector("[data-victim]").forEach(victim => 
+            victim.addEventListener('click', ()=>{
+                if(document.querySelector(`${[data-victim]}>li`).style.display=="none"){
+                    document.querySelector(`${[data-victim]}>li`).style.display=="";
+                }else{
+                    return false;
+                }
+            }))
+    }
+
+    /**
      * Programi baslatir.
      */
      start() {
         this.addEventButton();
         this.createCustomerList(new CustomerManager());
+        this.addEventButtonCustomer();
+        this.addEventButtonVictim();
     }
 }

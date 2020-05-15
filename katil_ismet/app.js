@@ -20,4 +20,3 @@
 
 const manager = new Manager();
 manager.start();
-console.log(new Manager().createCustomerList())

@@ -27,7 +27,7 @@ class CustomerView {
     toString(){
         let customerView = this.customer.customerArray.map(victim => `<li class="list-group-item">${new VictimView(victim)}</li>`).join("");
 
-        return `<ul class="list-group list-group-dark">
+        return `<ul class="list-group list-group-dark" data-customer>
                 ${customerView}
                 </ul>`
     }
