@@ -37,8 +37,11 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
+                <div class="col-12 col-sm-3 align-self-center">
                     <img src="./img/logo.png" alt="Logo" class="img-fluid">
+                </div>
+                <div class="col-12 col-sm-3 align-self-center">
+                    <a href="#reverse-table" class="btn btn-warning btn-block" role="button">Reverse Table</a>
                 </div>
             </div>
         </div>
@@ -54,7 +57,7 @@
                     <img src="./img/uthappizza.png" alt="Uthappizza" class="d-flex mr-3 img-thumbnail align-self-center">
                     <div class="media-body">
                         <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$4.99</span></h2>
-                        <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>        
+                        <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>        
                     </div>
                 </div>
             </div>
@@ -66,8 +69,15 @@
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                <div class="media">
+                    <div class="media-body">
+                        <h2>Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                        <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                    </div>
+                    <div class="media-right">
+                        <img src="./img/buffet.png" alt="Buffet" class="d-flex mr-3 img-thumbnail align-self-center">
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -84,6 +94,39 @@
                         <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
                     </div>
                 </div> 
+            </div>
+        </div>
+    </div>
+
+    <div class="row row-content" id="reverse-table">
+        <div class="col-12 offset-sm-2 col-sm-8">
+            <div class="card">
+                <h2 class="card-header bg-warning text-white">Reserve a Table</h2>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group custom-control custom-radio row">
+                            <label for="Numberofguests" class="col-md-2 col-form-label font-weight-bold">Number of Guests</label>
+                            <input type="radio" name="1" id="1" value="1"> <label for="1" class="control-label col-1">1</label>
+                            <input type="radio" name="2" id="2" value="2"> <label for="2" class="control-label col-1">2</label>
+                            <input type="radio" name="3" id="3" value="3"> <label for="3" class="control-label col-1">3</label>
+                            <input type="radio" name="4" id="4" value="4"> <label for="4" class="control-label col-1">4</label>
+                            <input type="radio" name="5" id="5" value="5"> <label for="5" class="control-label col-1">5</label>
+                            <input type="radio" name="6" id="6" value="6"> <label for="6" class="control-label col-1">6</label>
+                        </div>
+                        <div class="form-group custom-control row">
+                            <label for="Dateandtime" class="col-md-2 col-form-label font-weight-bold">Date and Time</label>
+                            <input type="text" class="col-md-3 d-inline form-control" placeholder="Date">
+                            <input type="text" class="col-md-3 d-inline form-control" placeholder="Time">
+                        </div>
+                        <div class="col-4 col-md-2 offset-md-2">
+                            <button type="submit" class="btn btn-primary">
+                                Reverse
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-body">
+                </div>
             </div>
         </div>
     </div>
