@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+
+        class Bär extends React.Component {
+        render(){
+            return (
+                <div style={{borderWidth:5 + "px", borderStyle:"solid", borderColor:"black"}}>
+                    <img src={this.props.src}/><br/>
+                    <name>{this.props.name}</name><br/>
+                    <price>{this.props.price}</price>
+                </div>
+            )
+        }
+    }
+
+    class Bärs extends React.Component {
+        render(){
+            return (
+                <div>
+                    <Bär src="abc" name="Teddy Bär A" price="25 Fr." />
+                    <Bär src="" name="Teddy Bär B" price="40 Fr." />
+                    <Bär src="" name="Teddy Bär C" price="60 Fr." />
+                </div>
+            )
+        }
+    }
+
+    class Shop extends React.Component {
+         render(){
+             return (
+                 <shop>
+                    <Bärs/>
+                 </shop>
+             )
+         }
+    }
+
+    ReactDOM.render(<Shop />, document.getElementById('root'))
+    
+    
+    
+    
+    </script>
+</body>
+
+</html>
