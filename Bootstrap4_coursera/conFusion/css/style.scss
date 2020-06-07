@@ -75,3 +75,24 @@ body {
     bottom: 0px;
     z-index: 1;
 }
+
+.modal-content{
+    background-color: $background-dark;
+}
+
+.model-header{
+    background-color: $background-dark;
+    border-bottom: 1px solid $background-dark;
+}
+
+.modal-body{
+    background-color: $background-pale;
+}
+
+.modal-title{
+    color: floralwhite;
+}
+
+.close{
+    color: floralwhite;
+}
