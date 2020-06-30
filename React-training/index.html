@@ -8,6 +8,7 @@
     <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="./data.js"></script>
 
 </head>
 
@@ -32,7 +33,7 @@
         render(){
             return (
                 <div>
-                    <Bär src="abc" name="Teddy Bär A" price="25 Fr." />
+                    <Bär src={this.props.data.avatar} name={this.props.data.name} price={this.props.data.price}/>
                     <Bär src="" name="Teddy Bär B" price="40 Fr." />
                     <Bär src="" name="Teddy Bär C" price="60 Fr." />
                 </div>
@@ -41,10 +42,13 @@
     }
 
     class Shop extends React.Component {
+        constructor(){
+            this.data = DATA;
+        }
          render(){
              return (
                  <shop>
-                    <Bärs/>
+                    <Bärs data={this.data}/>
                  </shop>
              )
          }
